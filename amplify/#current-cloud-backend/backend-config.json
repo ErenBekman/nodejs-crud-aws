@@ -1,0 +1,166 @@
+{
+  "api": {
+    "crud": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "bookDBTrigger2a792a01"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "userDBTriggerb58bfbef"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "auth": {
+    "nodejscrudaws05294e34": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "bookDBTrigger2a792a01": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn",
+            "StreamArn"
+          ],
+          "category": "storage",
+          "resourceName": "bookDB"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "categoriesDBTriggerf2f10067": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn",
+            "StreamArn"
+          ],
+          "category": "storage",
+          "resourceName": "categoriesDB"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "userDBTriggerb58bfbef": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn",
+            "StreamArn"
+          ],
+          "category": "storage",
+          "resourceName": "userDB"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_bookDBTrigger2a792a01_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "bookDBTrigger2a792a01"
+        }
+      ]
+    },
+    "AMPLIFY_function_bookDBTrigger2a792a01_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "bookDBTrigger2a792a01"
+        }
+      ]
+    },
+    "AMPLIFY_function_categoriesDBTriggerf2f10067_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "categoriesDBTriggerf2f10067"
+        }
+      ]
+    },
+    "AMPLIFY_function_categoriesDBTriggerf2f10067_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "categoriesDBTriggerf2f10067"
+        }
+      ]
+    },
+    "AMPLIFY_function_userDBTriggerb58bfbef_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "userDBTriggerb58bfbef"
+        }
+      ]
+    },
+    "AMPLIFY_function_userDBTriggerb58bfbef_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "userDBTriggerb58bfbef"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "bookDB": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    },
+    "categoriesDB": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    },
+    "userDB": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    }
+  }
+}

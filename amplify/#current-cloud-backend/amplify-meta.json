@@ -1,0 +1,260 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-nodejscrudaws-dev-ed12b-authRole",
+      "UnauthRoleArn": "arn:aws:iam::713552187626:role/amplify-nodejscrudaws-dev-ed12b-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::713552187626:role/amplify-nodejscrudaws-dev-ed12b-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-nodejscrudaws-dev-ed12b-deployment",
+      "UnauthRoleName": "amplify-nodejscrudaws-dev-ed12b-unauthRole",
+      "StackName": "amplify-nodejscrudaws-dev-ed12b",
+      "StackId": "arn:aws:cloudformation:eu-central-1:713552187626:stack/amplify-nodejscrudaws-dev-ed12b/382750a0-1847-11ef-ba0f-0a4eb1ba4d61",
+      "AmplifyAppId": "d32qbo0ssgl5in"
+    }
+  },
+  "function": {
+    "userDBTriggerb58bfbef": {
+      "service": "Lambda",
+      "providerPlugin": "awscloudformation",
+      "build": true,
+      "dependsOn": [
+        {
+          "category": "storage",
+          "resourceName": "userDB",
+          "attributes": [
+            "Name",
+            "Arn",
+            "StreamArn"
+          ]
+        }
+      ],
+      "lastPushTimeStamp": "2024-05-23T17:06:44.599Z",
+      "lastBuildTimeStamp": "2024-05-22T14:35:40.298Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2024-05-22T14:35:40.340Z",
+      "distZipFilename": "userDBTriggerb58bfbef-4b44674a59664f546b56-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-nodejscrudaws-dev-ed12b-deployment",
+        "s3Key": "amplify-builds/userDBTriggerb58bfbef-4b44674a59664f546b56-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-nodejscrudaws-dev-ed12b-deployment/amplify-cfn-templates/function/userDBTriggerb58bfbef-cloudformation-template.json",
+        "logicalId": "functionuserDBTriggerb58bfbef"
+      },
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::713552187626:role/userDBLambdaRoleb58bfbef-dev",
+        "Region": "eu-central-1",
+        "Arn": "arn:aws:lambda:eu-central-1:713552187626:function:userDBTriggerb58bfbef-dev",
+        "Name": "userDBTriggerb58bfbef-dev",
+        "LambdaExecutionRole": "userDBLambdaRoleb58bfbef-dev"
+      },
+      "lastPushDirHash": "NthRFEPUGFtovt0DvZlh9o6VwHY="
+    },
+    "bookDBTrigger2a792a01": {
+      "service": "Lambda",
+      "providerPlugin": "awscloudformation",
+      "build": true,
+      "dependsOn": [
+        {
+          "category": "storage",
+          "resourceName": "bookDB",
+          "attributes": [
+            "Name",
+            "Arn",
+            "StreamArn"
+          ]
+        }
+      ],
+      "lastPushTimeStamp": "2024-05-23T17:06:45.095Z",
+      "lastBuildTimeStamp": "2024-05-23T17:05:39.748Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2024-05-23T17:05:39.777Z",
+      "distZipFilename": "bookDBTrigger2a792a01-6a716e75594970543934-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-nodejscrudaws-dev-ed12b-deployment",
+        "s3Key": "amplify-builds/bookDBTrigger2a792a01-6a716e75594970543934-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-nodejscrudaws-dev-ed12b-deployment/amplify-cfn-templates/function/bookDBTrigger2a792a01-cloudformation-template.json",
+        "logicalId": "functionbookDBTrigger2a792a01"
+      },
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::713552187626:role/bookDBLambdaRole2a792a01-dev",
+        "Region": "eu-central-1",
+        "Arn": "arn:aws:lambda:eu-central-1:713552187626:function:bookDBTrigger2a792a01-dev",
+        "Name": "bookDBTrigger2a792a01-dev",
+        "LambdaExecutionRole": "bookDBLambdaRole2a792a01-dev"
+      },
+      "lastPushDirHash": "PA5sHVWkqEaMsCImuC6E2LlHYkU="
+    },
+    "categoriesDBTriggerf2f10067": {
+      "service": "Lambda",
+      "providerPlugin": "awscloudformation",
+      "build": true,
+      "dependsOn": [
+        {
+          "category": "storage",
+          "resourceName": "categoriesDB",
+          "attributes": [
+            "Name",
+            "Arn",
+            "StreamArn"
+          ]
+        }
+      ],
+      "lastPushTimeStamp": "2024-05-23T17:06:44.608Z",
+      "lastBuildTimeStamp": "2024-05-23T15:07:33.644Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2024-05-23T15:07:33.713Z",
+      "distZipFilename": "categoriesDBTriggerf2f10067-305944797154416f5a76-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-nodejscrudaws-dev-ed12b-deployment",
+        "s3Key": "amplify-builds/categoriesDBTriggerf2f10067-305944797154416f5a76-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-nodejscrudaws-dev-ed12b-deployment/amplify-cfn-templates/function/categoriesDBTriggerf2f10067-cloudformation-template.json",
+        "logicalId": "functioncategoriesDBTriggerf2f10067"
+      },
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::713552187626:role/categoriesDBLambdaRolef2f10067-dev",
+        "Region": "eu-central-1",
+        "Arn": "arn:aws:lambda:eu-central-1:713552187626:function:categoriesDBTriggerf2f10067-dev",
+        "Name": "categoriesDBTriggerf2f10067-dev",
+        "LambdaExecutionRole": "categoriesDBLambdaRolef2f10067-dev"
+      },
+      "lastPushDirHash": "pUfroliBgbjyuMofRxaQ4PDQQ9Q="
+    }
+  },
+  "storage": {
+    "userDB": {
+      "service": "DynamoDB",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-nodejscrudaws-dev-ed12b-deployment/amplify-cfn-templates/storage/userDB-cloudformation-template.json",
+        "logicalId": "storageuserDB"
+      },
+      "lastPushTimeStamp": "2024-05-23T17:06:44.611Z",
+      "output": {
+        "PartitionKeyName": "id",
+        "Region": "eu-central-1",
+        "Arn": "arn:aws:dynamodb:eu-central-1:713552187626:table/user-dev",
+        "StreamArn": "arn:aws:dynamodb:eu-central-1:713552187626:table/user-dev/stream/2024-05-22T14:35:50.510",
+        "PartitionKeyType": "S",
+        "Name": "user-dev"
+      },
+      "lastPushDirHash": "oD1nXzlp5nSoW58fKwUWt4Kv+D0="
+    },
+    "bookDB": {
+      "service": "DynamoDB",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-nodejscrudaws-dev-ed12b-deployment/amplify-cfn-templates/storage/bookDB-cloudformation-template.json",
+        "logicalId": "storagebookDB"
+      },
+      "lastPushTimeStamp": "2024-05-23T17:06:44.614Z",
+      "output": {
+        "PartitionKeyName": "id",
+        "Region": "eu-central-1",
+        "Arn": "arn:aws:dynamodb:eu-central-1:713552187626:table/book-dev",
+        "StreamArn": "arn:aws:dynamodb:eu-central-1:713552187626:table/book-dev/stream/2024-05-22T14:35:50.567",
+        "PartitionKeyType": "S",
+        "Name": "book-dev"
+      },
+      "lastPushDirHash": "RqJ4Obd+izyPmwvf/NPWz77HAnM="
+    },
+    "categoriesDB": {
+      "service": "DynamoDB",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-nodejscrudaws-dev-ed12b-deployment/amplify-cfn-templates/storage/categoriesDB-cloudformation-template.json",
+        "logicalId": "storagecategoriesDB"
+      },
+      "lastPushTimeStamp": "2024-05-23T17:06:44.617Z",
+      "output": {
+        "PartitionKeyName": "id",
+        "Region": "eu-central-1",
+        "Arn": "arn:aws:dynamodb:eu-central-1:713552187626:table/categories-dev",
+        "StreamArn": "arn:aws:dynamodb:eu-central-1:713552187626:table/categories-dev/stream/2024-05-23T15:07:43.038",
+        "PartitionKeyType": "S",
+        "Name": "categories-dev"
+      },
+      "lastPushDirHash": "aGpWuj0WkwhL4LN2poChtAFcYXM="
+    }
+  },
+  "auth": {
+    "nodejscrudaws05294e34": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-nodejscrudaws-dev-ed12b-deployment/amplify-cfn-templates/auth/nodejscrudaws05294e34-cloudformation-template.json",
+        "logicalId": "authnodejscrudaws05294e34"
+      },
+      "lastPushTimeStamp": "2024-05-23T17:06:44.619Z",
+      "output": {
+        "UserPoolId": "eu-central-1_urF12fRyH",
+        "AppClientIDWeb": "6jivnd8f985ni4ib5jb1aa3dp6",
+        "AppClientID": "6vtit8r87alt0ljda3nu9bvobb",
+        "IdentityPoolId": "eu-central-1:8c773322-298f-4ceb-96ea-8b64e1959b54",
+        "UserPoolArn": "arn:aws:cognito-idp:eu-central-1:713552187626:userpool/eu-central-1_urF12fRyH",
+        "IdentityPoolName": "nodejscrudaws05294e34_identitypool_05294e34__dev",
+        "UserPoolName": "nodejscrudaws05294e34_userpool_05294e34"
+      },
+      "lastPushDirHash": "XDz73BFo6Icd5nWsp1Aeyr6VKZg="
+    }
+  },
+  "api": {
+    "crud": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "bookDBTrigger2a792a01",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        },
+        {
+          "category": "function",
+          "resourceName": "userDBTriggerb58bfbef",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-nodejscrudaws-dev-ed12b-deployment/amplify-cfn-templates/api/crud-cloudformation-template.json",
+        "logicalId": "apicrud"
+      },
+      "lastPushTimeStamp": "2024-05-23T17:06:44.621Z",
+      "output": {
+        "ApiName": "crud",
+        "RootUrl": "https://xzy2ownqul.execute-api.eu-central-1.amazonaws.com/dev",
+        "ApiId": "xzy2ownqul"
+      },
+      "lastPushDirHash": "+cMIPn7iDXY/y7dH6Rma+8Rvui4="
+    }
+  }
+}

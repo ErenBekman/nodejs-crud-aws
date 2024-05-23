@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "paths": {
+    "/book": {
+      "name": "/book",
+      "lambdaFunction": "bookDBTrigger2a792a01",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/user": {
+      "name": "/user",
+      "lambdaFunction": "userDBTriggerb58bfbef",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
